@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #e9f3f5;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.card {
+    height: 548px;
+    width: 586px;
+    margin-top: 46px;
+    position: relative;
+}
+
+.card .monster {
+    background: #b1dbe7;
+    height: 398px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: static;
+    cursor: pointer;
+}
+
+.card .monster img {
+    height: 282px;
+    width: 190px;
+}
+
+.card .monster .effects {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    font-size: 70px;
+    text-align: center;
+    text-transform: uppercase;
+    z-index: -1;
+    height: 398px;
+    width: 586px;    
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.card .monster:hover > .effects{
+    z-index: 0;
+    background: #506367;
+    color: white;
+    opacity: 70%;
+}
+
+.card .text {
+    background: #f7f7f7;
+    height: 150px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.card .text p {
+    font-size: 45px;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+
+.round {
+    width: 90px;
+    height: 90px;
+    border: 1px solid #f7f7f7;
+    border-radius: 45px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background: #f7f7f7;
+    position: absolute;
+    top: 330px;
+    left: 66px;
+    display: flex;
+    justify-content: center;
+}
+
+.round i {
+    font-size: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #404040;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 38px solid transparent;
+    border-right: 38px solid transparent;
+    border-top: 48px solid #b1dbe7;
+    position: absolute;
+    top: 398px;
+    left: 255px;
+    background: #f7f7f7;
+}
